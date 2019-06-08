@@ -22,9 +22,9 @@ public class MainActivity extends Activity {    //메인 activity 시작!
     BufferedReader in;      //서버로부터 온 데이터를 읽는다.
     PrintWriter out;        //서버에 데이터를 전송한다.
     EditText input;         //화면구성
-    Button button;          //화면구성
-    TextView output;        //화면구성
-    String data;            //
+    Button button;          
+    TextView output;
+    String data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {   //앱 시작시  초기화설정

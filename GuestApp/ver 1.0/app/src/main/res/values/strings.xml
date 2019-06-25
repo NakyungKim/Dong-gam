@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HanApp</string>
+    <string name="id">ID</string>
+    <string name="pw">PW</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="exit">exit</string>
+    <string name="find_id_pw">Find ID/PW</string>
+    <string name="login">LOGIN</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="back">back</string>
+    <string name="pw">PW</string>
+</resources>

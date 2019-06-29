@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">OTP Application</string>
     <string name="master">Master</string>
-    <string name="사용자목록">사용자목록</string>
-    <string name="열림">열림</string>
-    <string name="닫힘">닫힘</string>
+    <string name="UserList">Userlist</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
 </resources>

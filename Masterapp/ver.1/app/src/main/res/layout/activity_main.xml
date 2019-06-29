@@ -17,14 +17,14 @@
         android:layout_marginBottom="35dp"
         android:background="@mipmap/ic_launcher_round"
         android:backgroundTint="@android:color/holo_red_light"
-        android:onClick="on1"
-        android:text="@string/닫힘"
+        android:onClick="close"
+        android:text="@string/Close"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:text="닫힘" />
+        tools:text="Closed" />
 
     <Button
         android:id="@+id/button2"
@@ -37,14 +37,14 @@
         android:layout_marginBottom="35dp"
         android:background="@mipmap/ic_launcher_round"
         android:backgroundTint="@android:color/holo_green_light"
-        android:onClick="on2"
-        android:text="@string/열림"
+        android:onClick="open"
+        android:text="@string/Open"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:text="열림" />
+        tools:text="Opened" />
 
 
     <Button
@@ -57,14 +57,14 @@
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="100dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:onClick="on3"
-        android:text="@string/사용자목록"
+        android:onClick="UserList"
+        android:text="@string/UserList"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:text="사용자목록" />
+        tools:text="UserList" />
 
     <TextView
         android:id="@+id/textView"

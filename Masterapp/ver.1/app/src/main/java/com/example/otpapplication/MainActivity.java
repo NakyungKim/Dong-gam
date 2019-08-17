@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "onCreate end in MainActivity");
     }
 
-    public void close(View v) {
-
-        Toast.makeText(getApplicationContext(), "Closed", Toast.LENGTH_SHORT).show();
-        Log.e(TAG, "onCreate close in MainActivity");
-
-    }
-
     public void open(View v) {
 
         Toast.makeText(getApplicationContext(), "Opended", Toast.LENGTH_SHORT).show();
         Log.e(TAG, "onCreate open in MainActivity");
+
+    }
+
+    public void close(View v) {
+
+        Toast.makeText(getApplicationContext(), "Closed", Toast.LENGTH_SHORT).show();
+        Log.e(TAG, "onCreate close in MainActivity");
     }
 
     public void UserList(View v) {

@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv_outPut = (TextView) findViewById(R.id.tv_outPut);
 
-        String url = "52.79.242.88";
+        String url = "ec2-52-79-242-88.ap-northeast-2.compute.amazonaws.com";
 
         NetworkTask networkTask = new NetworkTask(url, null);
         networkTask.execute();

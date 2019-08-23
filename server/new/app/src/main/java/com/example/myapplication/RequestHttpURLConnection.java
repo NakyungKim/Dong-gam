@@ -1,5 +1,7 @@
 package com.example.myapplication;
 import android.content.ContentValues;
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,7 +44,7 @@ public class RequestHttpURLConnection {
             URL url=new URL(_url);
             urlConn=(HttpURLConnection) url.openConnection();
 
-            urlConn.setRequestMethod("post");
+            urlConn.setRequestMethod("get");
             urlConn.setRequestProperty("Accept-Charset","UTF-8");
             urlConn.setRequestProperty("Context_Type","application/x-www-form-urlencoded;cahrset=UTF-8");
 
@@ -63,6 +65,8 @@ public class RequestHttpURLConnection {
             while (((line=reader.readLine())!=null)){
                 page +=line;
             }
+
+            Log.e("RequestHttpURLConnection",page);
 
             return page;
         } catch (MalformedURLException e) {

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,48 +23,41 @@ import java.net.URL;
 
 public class Main2Activity extends AppCompatActivity {
 
-    private static final String TAG1 = "MainActivity";
+    private static final String TAG = "MainActivity";
 
-
-
-
-    private static final String TAG = "HttpExampleActivity";
-
-    TextView TxtResult;
-    Button PostBtn, GetBtn;
+//    TextView TxtResult;
+//    Button PostBtn, GetBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        Log.e(TAG1, "onCreate start in MainActivity");
+        Log.e(TAG, "onCreate start in MainActivity");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        Log.e(TAG1, "onCreate end in MainActivity");
 
         Log.e(TAG, "onCreate started in HttpExampleActivity");
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_http_example);
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_http_example);
 
-        GetBtn = (Button) findViewById(R.id.get_btn);
-        PostBtn = (Button) findViewById(R.id.post_btn);
+//        GetBtn = (Button) findViewById(R.id.get_btn);
+//        PostBtn = (Button) findViewById(R.id.post_btn);
 
-        GetBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // donggam
-                new MakeNetworkCall().execute("http://52.79.242.88:80/http.php?get=1", "Get");
-            }
-        });
-
-        PostBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // donggam
-                new MakeNetworkCall().execute("http://52.79.242.88/http.php?post=1", "Post");
-            }
-        });
+//        GetBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//            // donggam
+//            new MakeNetworkCall().execute("http://52.79.242.88:80/http.php?get=1", "Get");
+//            }
+//        });
+//
+//        PostBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                // donggam
+//                new MakeNetworkCall().execute("http://52.79.242.88/http.php?post=1", "Post");
+//            }
+//        });
 
         Log.e(TAG, "onCreate ended in HttpExampleActivity");
     }
@@ -87,7 +80,7 @@ public class Main2Activity extends AppCompatActivity {
 
             if (response == HttpURLConnection.HTTP_OK) {
                 DataInputStream = cc.getInputStream();
-                //Log.e(TAG, "ByGetMethod, DataInputStream = " + DataInputStream);
+                Log.e(TAG, "ByGetMethod, DataInputStream = " + DataInputStream);
             }
             else {
                 Log.e(TAG, "ByGetMethod, response = " + response);
@@ -174,8 +167,8 @@ public class Main2Activity extends AppCompatActivity {
 
     public void DisplayMessage(String a) {
 
-        TxtResult = (TextView) findViewById(R.id.response);
-        TxtResult.setText(a);
+//        TxtResult = (TextView) findViewById(R.id.response);
+//        TxtResult.setText(a);
     }
 
     private class MakeNetworkCall extends AsyncTask<String, Void, String> {
